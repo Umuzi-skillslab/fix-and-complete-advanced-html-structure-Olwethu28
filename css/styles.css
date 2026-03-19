@@ -17,6 +17,10 @@ body {
     margin: 0;
 }
 
+#main-heading {
+    text-transform: uppercase;
+}
+
 /* Navigation - not using flexbox, poor styling */
 /* Flexbox Navigation */
 .nav {
@@ -35,8 +39,25 @@ body {
 
 /* Hover effect (pseudo-class) */
 .nav a:hover {
-    background-color: #555;
-    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+}
+.nav > a {
+    font-weight: bold;
+}
+
+h2 + p {
+    color: #666;
+}
+
+input[type="text"],
+input[type="email"] {
+    border: 2px solid #ccc;
+}
+
+input:focus, textarea:focus {
+    border-color: blue;
+    outline: none;
 }
 
 /* Services Flexbox Layout */
@@ -53,6 +74,44 @@ body {
     background-color: #f4f4f4;
     padding: 20px;
     border-radius: 10px;
+}
+.services article:first-child {
+    background-color: #e3f2fd;
+}
+.services article:last-child {
+    background-color: #fce4ec;
+}
+
+.services article:nth-child(2) {
+    background-color: #e8f5e9;
+}
+.nav a:not(:last-child) {
+    margin-right: 10px;
+}
+
+.services.article-card {
+    border: 2px solid black;
+}
+
+input:valid {
+    border-color: green;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+button:hover {
+    background-color: darkblue;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.services article p {
+    font-size: 14px;
 }
 /* Video Section Flexbox */
 section video {
@@ -175,6 +234,8 @@ form button {
     width: 100%;
     border-radius: 10px;
 }
+
+
 
 /* Missing: responsive design with media queries */
 /* Missing: advanced layout techniques */
