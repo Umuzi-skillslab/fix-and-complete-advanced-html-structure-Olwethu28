@@ -26,27 +26,86 @@
 
     <form>
 
-        <fieldset>
-            <legend>Contact Information</legend>
+    <!-- Personal Information -->
+    <fieldset>
+        <legend>Personal Information</legend>
 
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required minlength="3">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required minlength="3" maxlength="50">
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
 
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" required>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" 
+               pattern="[0-9]{10}" 
+               placeholder="e.g. 0712345678" required>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
+        <label for="website">Website (optional):</label>
+        <input type="url" id="website" name="website">
 
-        </fieldset>
+    </fieldset>
 
-        <button type="submit">Submit</button>
+    <!-- Service Selection -->
+    <fieldset>
+        <legend>Service Details</legend>
 
-    </form>
+        <label for="service">Select a Service:</label>
+        <select id="service" name="service" required>
+            <option value="">--Choose a service--</option>
+            <option value="video">Video Production</option>
+            <option value="audio">Audio Recording</option>
+            <option value="photography">Photography</option>
+        </select>
 
+        <p>Preferred Contact Method:</p>
+
+        <label>
+            <input type="radio" name="contact-method" value="email" required> Email
+        </label>
+
+        <label>
+            <input type="radio" name="contact-method" value="phone"> Phone
+        </label>
+
+        <label>
+            <input type="radio" name="contact-method" value="whatsapp"> WhatsApp
+        </label>
+
+    </fieldset>
+
+    <!-- Project Details -->
+    <fieldset>
+        <legend>Project Details</legend>
+
+        <label for="date">Project Start Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="budget">Estimated Budget (R):</label>
+        <input type="number" id="budget" name="budget" min="500" max="100000" required>
+
+        <p>Additional Services:</p>
+
+        <label>
+            <input type="checkbox" name="extras" value="editing"> Video Editing
+        </label>
+
+        <label>
+            <input type="checkbox" name="extras" value="sound"> Sound Design
+        </label>
+
+        <label>
+            <input type="checkbox" name="extras" value="marketing"> Marketing Content
+        </label>
+
+        <label for="message">Project Description:</label>
+        <textarea id="message" name="message" required minlength="10" maxlength="500"></textarea>
+
+    </fieldset>
+
+    <button type="submit">Submit</button>
+
+</form>
 </section>
 
 </main>
