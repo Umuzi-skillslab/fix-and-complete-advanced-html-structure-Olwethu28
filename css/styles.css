@@ -135,6 +135,46 @@ form button {
     }
 
 }
+/* Portfolio Grid Layout */
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.portfolio figure {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+/* Testimonials Grid */
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.testimonials figure {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+}
+@media (max-width: 768px) {
+
+    .testimonials {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.portfolio img,
+.testimonials img {
+    width: 100%;
+    border-radius: 10px;
+}
 
 /* Missing: responsive design with media queries */
 /* Missing: advanced layout techniques */
