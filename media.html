@@ -1,50 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our media gallery including videos, audio, and location.">
     <title>Media Gallery</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="top">
-        <h1>Media Gallery</h1>
-        <div class="nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="media.html">Media</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </div>
-    
-    <div>
-        <h2>Video Showcase</h2>
-        
-        <!-- First video - missing controls and fallback -->
-        <video src="media/sample1.mp4" width="640" height="360"></video>
-        
-        <!-- Second video missing entirely -->
-    </div>
-    
-    <div>
-        <h2>Audio Sample</h2>
-        <!-- Audio element missing completely -->
-        <p>Listen to our audio production quality.</p>
-    </div>
-    
-    <div>
-        <h2>Location</h2>
-        <!-- iframe missing completely -->
-        <p>Visit our studio at 123 Media Street</p>
-    </div>
-    
-    <div>
-        <h2>Client Testimonials</h2>
-        <img src="images/client1.jpg">
-        <img src="images/client2.jpg">
-        <!-- Missing figure/figcaption semantic markup -->
-    </div>
-    
-    <div class="bottom">
-        <p>Email: contact@mediaproduction.com</p>
-    </div>
+
+<header class="top">
+    <h1>Media Gallery</h1>
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="media.html">Media</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main>
+
+<section>
+    <h2>Video Showcase</h2>
+
+    <video controls width="600">
+        <source src="media/sample1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <video controls width="600">
+        <source src="media/sample2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+</section>
+
+<section>
+    <h2>Audio Sample</h2>
+
+    <audio controls>
+        <source src="media/sample-audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+</section>
+
+<section>
+    <h2>Location</h2>
+
+    <iframe 
+        src="https://www.google.com/maps?q=Johannesburg&output=embed"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+
+</section>
+
+<section>
+    <h2>Client Testimonials</h2>
+
+    <figure>
+        <img src="images/client1.jpg" alt="Client 1">
+        <figcaption>Excellent service and quality production!</figcaption>
+    </figure>
+
+    <figure>
+        <img src="images/client2.jpg" alt="Client 2">
+        <figcaption>Highly professional and creative team.</figcaption>
+    </figure>
+
+</section>
+
+</main>
+
+<footer class="bottom">
+    <p>Email: contact@mediaproduction.com</p>
+</footer>
+
 </body>
 </html>
