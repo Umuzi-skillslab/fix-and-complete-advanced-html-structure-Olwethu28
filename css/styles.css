@@ -18,16 +18,60 @@ body {
 }
 
 /* Navigation - not using flexbox, poor styling */
+/* Flexbox Navigation */
 .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     margin-top: 10px;
 }
 
 .nav a {
     color: white;
-    margin-right: 15px;
     text-decoration: none;
+    padding: 10px 15px;
 }
 
+/* Hover effect (pseudo-class) */
+.nav a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Services Flexbox Layout */
+.services {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.services article {
+    flex: 1 1 30%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+}
+/* Video Section Flexbox */
+section video {
+    margin: 10px;
+}
+
+section:first-of-type {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 /* Missing: pseudo-classes for hover effects */
 /* Missing: combination selectors */
 /* Missing: advanced selector types (attribute, child, etc) */
@@ -76,6 +120,20 @@ form button {
     color: white;
     padding: 20px;
     text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .services {
+        flex-direction: column;
+    }
+
 }
 
 /* Missing: responsive design with media queries */
