@@ -13,8 +13,14 @@ body {
     padding: 20px;
 }
 
+.hero h2 {
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
 .top h1 {
-    margin: 0;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 #main-heading {
@@ -35,6 +41,7 @@ body {
     color: white;
     text-decoration: none;
     padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Hover effect (pseudo-class) */
@@ -48,6 +55,10 @@ body {
 
 h2 + p {
     color: #666;
+}
+
+button {
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 input[type="text"],
@@ -74,12 +85,17 @@ input:focus, textarea:focus {
     background-color: #f4f4f4;
     padding: 20px;
     border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .services article:first-child {
     background-color: #e3f2fd;
 }
 .services article:last-child {
     background-color: #fce4ec;
+}
+
+.services article:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 .services article:nth-child(2) {
@@ -103,7 +119,7 @@ input:invalid {
 
 button:hover {
     background-color: darkblue;
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 button:active {
@@ -125,6 +141,10 @@ section:first-of-type {
     flex-wrap: wrap;
 }
 
+.services article:hover {
+    transform: translateY(-10px);
+}
+
 .bottom {
     display: flex;
     justify-content: center;
@@ -139,7 +159,8 @@ section:first-of-type {
     padding: 60px 20px;
     background-color: lightgray;
     /* Poor colour contrast */
-    color: #ddd;
+    color: black;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 /* Missing: flexbox layouts (requirement: 2+ flexbox layouts) */
@@ -147,6 +168,7 @@ section:first-of-type {
 
 .content {
     padding: 40px 20px;
+    animation: fadeIn 2s ease-in-out;
 }
 
 /* Missing: text effects (shadows, gradients) */
@@ -233,6 +255,35 @@ form button {
 .testimonials img {
     width: 100%;
     border-radius: 10px;
+}
+
+.portfolio img:hover {
+    transform: rotate(2deg);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #007BFF;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 
