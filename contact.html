@@ -1,40 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Contact</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact our media production company.">
+    <title>Contact Us</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="top">
-        <h1>Contact Us</h1>
-        <div class="nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="media.html">Media</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </div>
-    
-    <div>
-        <h2>Get In Touch</h2>
-        
-        <!-- Form with multiple errors -->
-        <form>
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Email">
-            <input type="text" placeholder="Phone">
-            <textarea placeholder="Message"></textarea>
-            
-            <!-- Missing: labels, proper input types (email, tel), validation attributes -->
-            <!-- Missing: radio buttons, checkboxes, select/dropdown, date/number inputs -->
-            <!-- Missing: fieldset for grouping -->
-            
-            <button>Submit</button>
-        </form>
-    </div>
-    
-    <div class="bottom">
-        <p>Email: contact@mediaproduction.com</p>
-    </div>
+
+<header class="top">
+    <h1>Contact Us</h1>
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="media.html">Media</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main>
+
+<section>
+    <h2>Get In Touch</h2>
+
+    <form>
+
+        <fieldset>
+            <legend>Contact Information</legend>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required minlength="3">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+        </fieldset>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</section>
+
+</main>
+
+<footer class="bottom">
+    <p>Email: contact@mediaproduction.com</p>
+</footer>
+
 </body>
 </html>
