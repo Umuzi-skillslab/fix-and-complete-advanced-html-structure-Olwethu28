@@ -3,38 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional media production services including video, audio, and multimedia solutions.">
-    <title>Media Production Company</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <meta name="description" content="Professional media production company offering video, audio, and multimedia solutions.">
+    <meta name="author" content="Media Production Co.">
+    <title>Home | Media Production Co.</title>
+    <link rel="stylesheet" href ="css/styles.css">
 </head>
 <body>
 
-<header class="top">
-    <h1>Media Production Company</h1>
-    <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="media.html">Media</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="logo">&#127909; MediaPro</a>
+            <nav aria-label="Main navigation">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="media.html">Media</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-<main>
-    <section class="hero">
-        <h2>Professional Media Production Services</h2>
-        <p>We create stunning visual content for your business needs.</p>
+    <section class="hero" aria-label="Hero banner">
+        <div class="hero-content">
+            <h2>Professional Media Production Services</h2>
+            <p>We create stunning visual content for your business needs — video, audio, and beyond.</p>
+            <a href="contact.html" class="btn">Get In Touch</a>
+        </div>
     </section>
 
-    <section class="content">
-        <h2 id="main-heading">What We Do</h2>
-        <p>Video production, audio recording, and multimedia solutions for businesses of all sizes.</p>
-    </section>
-</main>
+    <main>
 
-<footer class="bottom">
-    <p>Email: contact@mediaproduction.com</p>
-    <p>Phone: 555-0123</p>
-</footer>
+        <section aria-labelledby="services-heading">
+            <span class="section-label">Services</span>
+            <h2 id="services-heading">What We Do</h2>
+            <p>Video production, audio recording, and multimedia solutions for businesses of all sizes.</p>
+
+            <div class="services-flex">
+                <article class="service-card">
+                    <span class="service-icon">&#127910;</span>
+                    <h3>Video Production</h3>
+                    <p>Professional video creation for corporate events, commercials, and creative storytelling projects.</p>
+                </article>
+                <article class="service-card">
+                    <span class="service-icon">&#127908;</span>
+                    <h3>Audio Recording</h3>
+                    <p>Studio-quality audio production, podcasting, voice-overs, and professional sound editing services.</p>
+                </article>
+                <article class="service-card">
+                    <span class="service-icon">&#127891;</span>
+                    <h3>Media Training</h3>
+                    <p>Workshops and coaching to help your team communicate professionally in front of the camera.</p>
+                </article>
+            </div>
+        </section>
+
+        <section aria-labelledby="work-heading">
+            <span class="section-label">Portfolio</span>
+            <h2 id="work-heading">Featured Work</h2>
+            <p>A selection of our most celebrated projects.</p>
+
+            <div class="portfolio-grid">
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=600" alt="Corporate video production shoot on location">
+                    <figcaption>Corporate Video — Annual Report 2024</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=600" alt="Professional audio recording studio session">
+                    <figcaption>Audio Recording — Podcast Series</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=600" alt="Live event media coverage with cameras">
+                    <figcaption>Live Event Coverage — Tech Summit</figcaption>
+                </figure>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-col">
+                <h4>MediaPro</h4>
+                <p style="color:rgba(255,255,255,0.6); font-size:0.9rem;">Professional media production services for businesses since 2015.</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <a href="mailto:contact@mediaproduction.com">contact@mediaproduction.com</a>
+                <a href="tel:5550123">555-0123</a>
+                <a href="#">123 Media Street, Auckland</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Media Production Co. All rights reserved.</p>
+        </div>
+    </footer>
 
 </body>
 </html>

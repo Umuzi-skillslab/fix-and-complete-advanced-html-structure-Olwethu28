@@ -3,73 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn about our media production team and services.">
-    <title>About Us</title>
+    <meta name="description" content="Meet our team of experienced media professionals and learn about our services.">
+    <meta name="author" content="Media Production Co.">
+    <title>About Us | Media Production Co.</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-<header class="top">
-    <h1>About Our Services</h1>
-    <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="media.html">Media</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="logo">&#127909; MediaPro</a>
+            <nav aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html" class="active">About</a>
+                <a href="media.html">Media</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-<main>
+    <div class="page-banner">
+        <h1>About Our Services</h1>
+        <p>Dedicated professionals creating exceptional media experiences</p>
+    </div>
 
-<section>
-    <h2>Our Team</h2>
-    <p>We are a team of experienced media professionals dedicated to creating high-quality content.</p>
-</section>
+    <main>
 
-<section class="services">
-    <h2>Services</h2>
+        <section aria-labelledby="team-heading">
+            <span class="section-label">Our Team</span>
+            <h2 id="team-heading">Meet the Professionals</h2>
+            <p>We are a team of experienced media professionals dedicated to creating high-quality content.</p>
 
-    <article class="article-card" >
-        <h3>Video Production</h3>
-        <p>Professional video creation for corporate and creative projects.</p>
-    </article>
+            <div class="team-flex">
+                <div class="team-card">
+                    <figure>
+                        <img src="images/Lihle Dani.jpeg" alt="Portrait of Lihle Dani, Creative Director">
+                        <figcaption>
+                            <strong>Lihle Dani</strong>
+                            Creative Director
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="team-card">
+                    <figure>
+                        <img src="images/Lukhanyiso Plett.jpeg" alt="Portrait of Lukhanyi Plett, Lead Producer">
+                        <figcaption>
+                            <strong>Lukhanyiso Plett</strong>
+                            Lead Producer
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="team-card">
+                    <figure>
+                        <img src="images/Sibusiso Kanityi.jpeg" alt="Portrait of Sibusiso Kanityi, Audio Engineer">
+                        <figcaption>
+                            <strong>Sibusiso Kanityi</strong>
+                            Audio Engineer
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
 
-    <article class="article-card">
-        <h3>Audio Recording</h3>
-        <p>Studio-quality audio production and editing services.</p>
-    </article>
+        <section aria-labelledby="services-heading">
+            <span class="section-label">Services</span>
+            <h2 id="services-heading">What We Offer</h2>
+            <p>Comprehensive media solutions tailored to your business needs.</p>
 
-    <article class="article-card">
-        <h3>Photography</h3>
-        <p>High-quality photography for events, products, and branding.</p>
-    </article>
-</section>
+            <div class="services-flex">
+                <article class="service-card">
+                    <span class="service-icon">&#127910;</span>
+                    <h3>Video Production</h3>
+                    <p>Professional video creation for corporate and creative projects including commercials, documentaries, and brand films.</p>
+                </article>
+                <article class="service-card">
+                    <span class="service-icon">&#127908;</span>
+                    <h3>Audio Recording</h3>
+                    <p>Studio-quality audio production and editing services including music, voice-overs, and podcast production.</p>
+                </article>
+                <article class="service-card">
+                    <span class="service-icon">&#128247;</span>
+                    <h3>Photography</h3>
+                    <p>Commercial and editorial photography services including product shoots, events, and corporate headshots.</p>
+                </article>
+            </div>
+        </section>
 
-<section class="portfolio">
-    <h2>Portfolio</h2>
+        <section aria-labelledby="portfolio-heading">
+            <span class="section-label">Portfolio</span>
+            <h2 id="portfolio-heading">Our Work</h2>
+            <p>Browse a selection of our completed projects.</p>
 
-    <figure>
-        <img src="images/work1.jpg" alt="Project 1">
-        <figcaption>Corporate video project</figcaption>
-    </figure>
+            <div class="portfolio-grid">
+                <figure>
+                    <img src="images/Corporate video.jpeg" alt="Corporate video production filming on location in an office">
+                    <figcaption>Corporate Film</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Album.jpeg" alt="Professional recording studio with mixing board">
+                    <figcaption>Album Recording</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Live event coverage.jpeg" alt="Live event with professional video coverage">
+                    <figcaption>Live Coverage</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Aerial photography.jpeg" alt="Drone aerial photography of cityscape">
+                    <figcaption>Aerial Photography</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/product shoot.jpeg" alt="Product photography on white studio backdrop">
+                    <figcaption>Product Shoot</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Podcast.jpeg" alt="Radio host recording podcast in studio">
+                    <figcaption>Podcast Production</figcaption>
+                </figure>
+            </div>
+        </section>
 
-    <figure>
-        <img src="images/work2.jpg" alt="Project 2">
-        <figcaption>Audio studio session</figcaption>
-    </figure>
+    </main>
 
-    <figure>
-        <img src="images/work3.jpg" alt="Project 3">
-        <figcaption>Creative photography shoot</figcaption>
-    </figure>
-
-</section>
-
-</main>
-
-<footer class="bottom">
-    <p>Email: contact@mediaproduction.com</p>
-</footer>
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-col">
+                <h4>MediaPro</h4>
+                <p style="color:rgba(255,255,255,0.6); font-size:0.9rem;">Professional media production services for businesses since 2015.</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <a href="mailto:contact@mediaproduction.com">contact@mediaproduction.com</a>
+                <a href="tel:5550123">555-0123</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Media Production Co. All rights reserved.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
