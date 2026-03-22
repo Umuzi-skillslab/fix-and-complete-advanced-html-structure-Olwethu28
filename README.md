@@ -103,7 +103,7 @@ The starter code had several problems:
 ---
 
 ## Limitations
-- No backend functionality for form submission (HTML only)
+- No backend functionality for form submission
 - Minor visual differences may occur on older browsers
 
 ---
