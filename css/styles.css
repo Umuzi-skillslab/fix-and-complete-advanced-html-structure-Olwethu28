@@ -780,19 +780,21 @@ footer a:hover {
     .footer-inner {
         flex-direction: column;
     }
-
+/* Show as grid layout*/
     .portfolio-grid {
         grid-template-columns: 1fr;
     }
-
+/* Show as grid layout*/
     .testimonials-grid {
         grid-template-columns: 1fr;
     }
 
+/* Show burger icon */
    .menu-icon {
     display: block;
    }
 
+/* Hide nav by default */
    .nav {
     display: none;
     flex-direction: column;
@@ -801,11 +803,13 @@ footer a:hover {
     margin-top: 10px;
    }
 
+/* Show nav when checked */
    #menu-toggle:checked + .menu-icon + nav {
     display: flex;
    }
 
-   .nav a[href] {
+/* Style links */
+   nav a[href] {
     width: 100%;
     padding: 12px;
     border-top: 1px solid rgba(255,255,255,0.1);
